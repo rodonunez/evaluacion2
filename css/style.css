@@ -564,17 +564,19 @@ p {
 	width: 300px;
 	margin: 50px auto;
 	padding: 20px;
-	background-color: #f7f7f7;
+	background-color: #333;
 	border-radius: 5px;
   }
   
   #login-form h2 {
 	margin-top: 0;
+	color: gray;
   }
   
   #login-form label {
 	display: block;
 	margin-bottom: 10px;
+	color: gray;
   }
   
   #login-form input[type="email"],
@@ -591,8 +593,8 @@ p {
 	width: 100%;
 	padding: 10px;
 	margin-top: 20px;
-	background-color: #333;
-	color: #fff;
+	background-color: gray;
+	color: white;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -603,17 +605,19 @@ p {
 	width: 300px;
 	margin: 50px auto;
 	padding: 20px;
-	background-color: #f7f7f7;
+	background-color: #333;
 	border-radius: 5px;
   }
   
   #register-form h2 {
 	margin-top: 0;
+	color: gray;
   }
   
   #register-form label {
 	display: block;
 	margin-bottom: 10px;
+	color: gray;
   }
   
   #register-form input[type="text"],
@@ -631,8 +635,8 @@ p {
 	width: 100%;
 	padding: 10px;
 	margin-top: 20px;
-	background-color: #333;
-	color: #fff;
+	background-color: gray;
+	color: white;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -679,6 +683,23 @@ p {
 	padding: 2rem;
 }
 
+/* Volver atras*/
+#goBackLink {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: black;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 16px;
+	margin-top: 20px;
+  }
+  
+  #goBackLink:hover {
+	background-color: gray;
+	cursor: pointer;
+  }
+
 /* Estilos para los botones */
 
 .btn {
@@ -709,3 +730,5 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+

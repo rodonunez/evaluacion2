@@ -194,6 +194,11 @@ $(document).ready(function () {
   });
 });
 
+// VOLVER ATRAS
+function goBack() {
+  window.history.back();
+}
+
 // INICIAR SESION
 const form = document.getElementById('login-form');
 
@@ -227,7 +232,23 @@ form2.addEventListener('submit', (event) => {
 });
 
 
+function mostrarPassword(){
+  var cambio = document.getElementById("txtPassword");
+  if(cambio.type == "password"){
+    cambio.type = "text";
+    $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+  }else{
+    cambio.type = "password";
+    $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+  }
+} 
 
+$(document).ready(function () {
+//CheckBox mostrar contraseña
+$('#ShowPassword').click(function () {
+  $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+});
+});
 
 
 
